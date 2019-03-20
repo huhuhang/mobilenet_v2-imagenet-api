@@ -29,6 +29,10 @@ def prepare_image(image, target):
 
 	return image
 
+@app.route('/')
+def index():
+    return 'Please use the POST method to get predictions.'
+
 @app.route("/predict", methods=["POST"])
 def predict():
 	data = {"success": False}
