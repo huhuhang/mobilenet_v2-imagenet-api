@@ -2,5 +2,5 @@ flask
 gunicorn
 requests
 tensorflow
-PIL
+pillow
 numpy
