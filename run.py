@@ -35,7 +35,6 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-	load_model() # 提前加载模型
 	data = {"success": False}
 	if flask.request.method == "POST":
 		if flask.request.files.get("image"):
@@ -60,4 +59,5 @@ def predict():
 
 # 启动
 if __name__ == "__main__":
+	load_model() # 提前加载模型
 	app.run(host='127.0.0.1', debug=True)
