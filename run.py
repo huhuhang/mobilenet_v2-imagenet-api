@@ -13,8 +13,7 @@ model = None
 
 def load_model():
 	# 加载预训练模型
-	global model, graph
-	graph = tf.get_default_graph()
+	global model
 	model = tf.keras.applications.MobileNetV2(weights="imagenet")
 
 def prepare_image(image, target):
@@ -44,6 +43,7 @@ def predict():
 			# 预处理图片
 			image = prepare_image(image, target=(224, 224))
 			# 推理
+			graph = tf.get_default_graph()
 			with graph.as_default():
 				preds = model.predict(image)
 			# 使用 ImageNet 标签对推理结果进行解码
