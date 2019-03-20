@@ -36,7 +36,7 @@ def index():
 @app.route("/predict", methods=["POST"])
 def predict():
     load_model()  # 提前加载模型
-    data = {"success": False}
+    data = {"status": 'fail'}
     if flask.request.method == "POST":
         if flask.request.files.get("image"):
             # 读取图片为 PIL 格式
@@ -56,7 +56,7 @@ def predict():
             for (imagenetID, label, prob) in results[0]:
                 r = {"label": label, "probability": round(float(prob), 3)}
                 data["predictions"].append(r)
-            data["success"] = True
+            data["status"] = 'success'
 
     return flask.jsonify(data)
 
