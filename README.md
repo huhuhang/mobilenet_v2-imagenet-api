@@ -11,7 +11,13 @@
 
 ```json
 {
-  "species": "dog",
-  "url": "https://images.dog.ceo/breeds/saluki/n02091831_3242.jpg"
+  "predictions": [
+    { "label": "sports_car", "probability": 0.855 },
+    { "label": "racer", "probability": 0.028 },
+    { "label": "convertible", "probability": 0.022 },
+    { "label": "grille", "probability": 0.014 },
+    { "label": "car_wheel", "probability": 0.009 }
+  ],
+  "success": true
 }
 ```

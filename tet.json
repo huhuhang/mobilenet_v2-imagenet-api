@@ -1,0 +1,10 @@
+{
+  "predictions": [
+    { "label": "sports_car", "probability": 0.8559758067131042 },
+    { "label": "racer", "probability": 0.02813643030822277 },
+    { "label": "convertible", "probability": 0.022242514416575432 },
+    { "label": "grille", "probability": 0.014228000305593014 },
+    { "label": "car_wheel", "probability": 0.009040375240147114 }
+  ],
+  "success": true
+}
