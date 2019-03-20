@@ -7,7 +7,14 @@
 
 ## Usage
 
-<pre>curl -X <b>POST</b> -F image=@image.jpg 'https://mobilenet-v2-imagenet.herokuapp.com/predict'</pre>
+Run `python run.py` locally to start the Flask web service:
+
+<pre>curl -X <b>POST</b> -F image=@test.jpg 'http://127.0.0.1:5000/predict'</pre>
+
+Or use the Heroku API:
+
+<pre>curl -X <b>POST</b> -F image=@test.jpg 'https://mobilenet-v2-imagenet.herokuapp.com/predict'</pre>
+
 
 ```json
 {
