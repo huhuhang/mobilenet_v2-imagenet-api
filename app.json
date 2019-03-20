@@ -1,0 +1,7 @@
+{
+  "name": "mobilenet_v2-imagenet-api",
+  "description": "ImageNet Predict",
+  "image": "heroku/python",
+  "repository": "https://git.heroku.com/mobilenet_v2-imagenet-api.git",
+  "keywords": ["python", "flask" ]
+}

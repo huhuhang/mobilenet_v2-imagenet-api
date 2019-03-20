@@ -1,0 +1,6 @@
+flask
+gunicorn
+requests
+tensorflow
+PIL
+numpy
