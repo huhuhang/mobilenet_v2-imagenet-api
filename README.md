@@ -28,5 +28,5 @@ Or use the Heroku API:
   "status": "success"
 }
 ```
-
-[Kaggle Kernels 在线执行](https://www.kaggle.com/louplus/mobilenet-api)
+<br />
+[![](https://img.shields.io/badge/Kaggle%20Kernels-启动-brightgreen.svg?style=flat-square&logo=kaggle)](https://www.kaggle.com/louplus/mobilenet-api)
