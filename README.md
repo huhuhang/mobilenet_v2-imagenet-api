@@ -11,6 +11,12 @@ Run `python run.py` locally to start the Flask web service:
 
 <pre>curl -X <b>POST</b> -F image=@test.jpg 'http://127.0.0.1:5000/predict'</pre>
 
+
+Recommended: 
+<br />
+
+[![](https://img.shields.io/badge/Kaggle%20Kernels-启动-brightgreen.svg?style=flat-square&logo=kaggle)](https://www.kaggle.com/louplus/mobilenet-api)
+
 Or use the Heroku API:
 
 <pre>curl -X <b>POST</b> -F image=@test.jpg 'https://mobilenet-v2-imagenet.herokuapp.com/predict'</pre>
@@ -28,6 +34,3 @@ Or use the Heroku API:
   "status": "success"
 }
 ```
-<br />
-
-[![](https://img.shields.io/badge/Kaggle%20Kernels-启动-brightgreen.svg?style=flat-square&logo=kaggle)](https://www.kaggle.com/louplus/mobilenet-api)
