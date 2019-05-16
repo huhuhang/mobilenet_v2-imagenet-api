@@ -28,3 +28,5 @@ Or use the Heroku API:
   "status": "success"
 }
 ```
+
+[Kaggle Kernels 在线执行](https://www.kaggle.com/louplus/mobilenet-api)
